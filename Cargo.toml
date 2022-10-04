@@ -1,0 +1,24 @@
+[package]
+name = "rtop_plugin_docker"
+version = "0.1.0"
+authors = ["Asthowen<contact@asthowen.fr>"]
+edition = "2021"
+description = "A simple plugin for Rtop to manage Docker containers."
+repository = "https://github.com/Asthowen/RtopPluginDocker"
+readme = "README.md"
+license = "GPL-3.0"
+
+[profile.release]
+opt-level = 3
+strip = true
+lto = true
+
+[lib]
+name = "rtop_plugin_docker"
+crate-type = ["cdylib"]
+
+[dependencies]
+tokio = { version="1.21.2", features = ["rt"] }
+futures-util = "0.3.24"
+rtop_dev = "1.0.0-beta.3"
+bollard = "0.13"
