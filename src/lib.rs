@@ -27,7 +27,7 @@ impl rtop_dev::widget::Widget for DockerContainersListWidget {
     }
 
     fn on_update(&mut self) {
-        let docker = self.docker.clone().unwrap();
+        let docker: Docker = self.docker.clone().unwrap();
         let runtime: Arc<Mutex<Runtime>> = self.tokio_runtime.as_ref().unwrap().clone();
 
         let containers_items_arc: Arc<tokio::sync::Mutex<Vec<ListItem>>> =

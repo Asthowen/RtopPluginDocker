@@ -1,8 +1,8 @@
 <!--suppress HtmlDeprecatedAttribute -->
-<h1 align="center">
-  RtopPluginDocker
-</h1>
-<p align="center">
+<div align="center">
+    <h1>
+      RtopPluginDocker
+    </h1>
     <a href="https://www.rust-lang.org/">
         <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Made with Rust">
     </a>
@@ -16,10 +16,11 @@
     <a href="https://github.com/Asthowen/RtopPluginDocker/stargazers">
         <img src="https://img.shields.io/github/stars/Asthowen/RtopPluginDocker?style=for-the-badge" alt="Stars">
     </a>
-</p>
-<h3 align="center">
-    <strong>A simple plugin for Rtop to manage Docker containers.<strong>
-</h3>
+    <h3>
+        <strong>A simple plugin for Rtop to manage Docker containers.</strong>
+    </h3>
+</div>
+
 
 ## Widgets available
 - [x] Docker containers (docker.docker_containers)
